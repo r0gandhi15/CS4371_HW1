@@ -15,8 +15,8 @@ docker exec -it resourcemanager bash -c 'cd /tmp && jar xf Q1Analysis.jar META-I
 ## UPLOAD TEXT FILE
 ```
 docker exec -it resourcemanager hadoop fs -mkdir -p /inputA
-docker cp sample.txt resourcemanager:/tmp/sample.txt
-docker exec -it resourcemanager hadoop fs -put /tmp/sample.txt /inputA/
+docker cp q1_dataset-1.txt resourcemanager:/tmp/q1_dataset-1.txt
+docker exec -it resourcemanager hadoop fs -put /tmp/q1_dataset-1.txt /inputA/
 ```
 
 ## RUN JOB
